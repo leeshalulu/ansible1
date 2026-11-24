@@ -12,4 +12,8 @@
         name: ashik
         uid: 30
         state: present
-hi hello 
+    - name: create a user
+      user:
+        name: shinsila
+        uid: 431
+        state: present
