@@ -1,22 +1,17 @@
+
 ---
 - name: Install and configure Apache web server
   hosts: localhost
   become: yes
 
   tasks:
-
     - name: Install Apache
-      apt:
-        name: apache2
+      dnf:
+        name: httpd
         state: present
 
-    - name: Start Apache service
+    - name: Start and enable Apache
       service:
-        name: apache2
+        name: httpd
         state: started
-
-    - name: Enable Apache 
-      service:
-        name: apache2
         enabled: yes
-
