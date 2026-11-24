@@ -1,0 +1,11 @@
+---
+- name: create fil`es
+  hosts: all
+  tasks:
+    - name: create files
+      file:
+        name: "{{item}}"
+        state: touch
+      loop:
+        - file10.txt
+        - file11.txt
