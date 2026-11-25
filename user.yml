@@ -1,9 +1,9 @@
 ---
-- name: create a user
+- name: create a useraccount
   hosts: all
   tasks:
-    - name: create a user
+    - name: create a useraccount
       user:
-        name: adnan
-        uid: 20
+        name: adnan kalathil
+        uid: 2000
         state: present
