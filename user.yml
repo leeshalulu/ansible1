@@ -19,3 +19,8 @@
         name: alwin
         uid: 18
         state: present
+    - name: create a user
+      user:
+        name: amith
+        uid: 19
+        state: present 
