@@ -16,4 +16,6 @@
       user:
         name: shinsila
         uid: 431
+        name: alwin
+        uid: 18
         state: present
